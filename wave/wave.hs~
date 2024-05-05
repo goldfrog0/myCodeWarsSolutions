@@ -1,0 +1,10 @@
+module MexicanWave where
+
+wave :: String -> [String]
+wave = error "y no codez?"
+
+
+applyAtN :: (a -> a) -> Int -> [a] -> [a]
+applyAtN f _ []     = []
+applyAtN f 0 (x:xs) = f x : xs
+applyAtN f n (x:xs) = x : applyAtN f (n-1) xs

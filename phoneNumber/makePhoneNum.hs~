@@ -1,0 +1,9 @@
+module CreatePhoneNumber where
+
+import Data.Char
+
+createPhoneNumber :: [Int] -> String
+createPhoneNumber nums = formatter .  show $ nums
+  where 
+    formatter (a:b:c:d:e:f:g:h:i:j:empty) =
+      '(':a:b:c:')':' ':d:e:f:'-':g:h:i:j:""

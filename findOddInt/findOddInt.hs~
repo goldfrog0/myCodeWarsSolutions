@@ -1,0 +1,10 @@
+module FindOddInt where
+
+module Codewars.Kata.FindOdd where
+
+findOdd :: [Int] -> Int
+findOdd list = 
+  aux list counts
+    where aux list counts = [x | x <- (\x -> length filter (==x) list)]
+
+          
