@@ -1,7 +1,0 @@
-module Codewars.Kata.Suite1 where
-
-going :: Integer -> Double
-going = undefined
-
-fac 0 = 1
-fac n = n * fac (n-1)
